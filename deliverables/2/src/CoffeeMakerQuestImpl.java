@@ -2,6 +2,8 @@ import java.util.*;
 
 public class CoffeeMakerQuestImpl implements CoffeeMakerQuest {
 
+	// TODO: Add more member variables and methods as needed.
+	
 	CoffeeMakerQuestImpl() {
 		// TODO
 	}
