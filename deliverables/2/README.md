@@ -87,7 +87,7 @@ The above will print a full Java stack trace for every failure.  It is useful wh
 ## Additional Requirements
 
 * Code coverage of the class CoffeeMakerQuestImpl when the JUnit TestRunner is
-  run should be at an absolute minimum of 90%.  If coverage falls below that
+  run should be at an absolute minimum of **90%**.  If coverage falls below that
 number, add more unit tests to CoffeeMakerQuestTest.
 
 * Write at least one private method while implementing CoffeeMakerQuestImpl.
@@ -148,7 +148,7 @@ one page for easy viewing and grading.  Your screenshot should look like either:
    <img alt="Code Coverage Jacoco" src=code_coverage_jacoco.png width=700>
 
    Make sure that the coverage of CoffeeMakerQuestImpl is showing and the
-overall coverage is above 90\% as shown above.
+overall coverage is above **90%** as shown above.
 
 ## GradeScope Feedback
 
