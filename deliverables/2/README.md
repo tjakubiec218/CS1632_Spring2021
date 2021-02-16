@@ -186,6 +186,12 @@ For looking up methods only, not a user guide.
 https://javadoc.io/static/org.mockito/mockito-core/3.2.4/org/mockito/Mockito.html  
 Most useful is the sections about verification and stubbing.
 
+* Jacoco User Manual:  
+https://www.jacoco.org/userdoc/index.html
+
+* Jacoco CLI (Command Line Interface) Manual:  
+https://www.jacoco.org/jacoco/trunk/doc/cli.html
+
 * Eclipse IDE
 If you want more information, here is a page put up by a U Chicago professor:  
 http://people.cs.uchicago.edu/~kaharris/10200/tutorials/eclipse/index.html  
