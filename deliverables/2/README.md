@@ -87,8 +87,8 @@ The above will print a full Java stack trace for every failure.  It is useful wh
 ## Additional Requirements
 
 * Code coverage of the class CoffeeMakerQuestImpl when the JUnit TestRunner is
-  run should be at an absolute minimum of 80%.  If coverage falls below that
-number, add more unit tests in CoffeeMakerQuestTest.
+  run should be at an absolute minimum of 90%.  If coverage falls below that
+number, add more unit tests to CoffeeMakerQuestTest.
 
 * Write at least one private method while implementing CoffeeMakerQuestImpl.
   Add at least one unit test that tests that private method at the very bottom
@@ -139,7 +139,16 @@ deductions.
    coding.  Please refer to [Exercise 2](/exercises/2#measuring-code-coverage) on how to create the screenshot.  After
 you have created the screenshot, save the picture to a PDF file and submit to
 GradeScope at the "Deliverable 2 Coverage" link.  Make sure the picture fits in
-one page for easy viewing and grading.
+one page for easy viewing and grading.  Your screenshot should look like either:
+
+   <img alt="Code Coverage Eclipse" src=code_coverage_eclipse.png width=700>
+   
+   or ...
+
+   <img alt="Code Coverage Jacoco" src=code_coverage_jacoco.png width=700>
+
+   Make sure that the coverage of CoffeeMakerQuestImpl is showing and the
+overall coverage is above 90\% as shown above.
 
 ## GradeScope Feedback
 
