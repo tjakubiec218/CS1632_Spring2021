@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class RentACatBuggy implements RentACat {
 
-	public ArrayList<Cat> cats = new ArrayList<Cat>();
+	private ArrayList<Cat> cats = new ArrayList<Cat>();
 
 	/**
 	 * Return a cat. This should call the .returnCat() method on the cat for the
@@ -169,7 +169,7 @@ public class RentACatBuggy implements RentACat {
 	public static void main(String[] args) {
 
 		// Turn off automatic bug injection in the Cat class.
-		Cat._bugInjectionOn = false;
+		Cat.bugInjectionOn = false;
 
 		RentACat rc = new RentACatBuggy();
 
