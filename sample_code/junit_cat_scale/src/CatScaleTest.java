@@ -19,7 +19,8 @@ public class CatScaleTest {
 		CatScale scale = new CatScale();
 		Cat cat = Mockito.mock(Cat.class);
 		Mockito.when(cat.getWeight()).thenReturn(80);
-		assertEquals("Overweight", scale.report(cat));
-		Mockito.verify(cat).getWeight();
+		String ret = scale.report(cat);
+		assertEquals("80 pound cat not reported as overweight", "Overweight", ret);
+		Mockito.verify(cat, Mockito.atLeastOnce()).getWeight();
 	}
 }
