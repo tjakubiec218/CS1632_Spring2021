@@ -73,7 +73,7 @@ AFIST = [_A Friendly Introduction to Software Testing_](software-quality-assuran
 
 * Midterm 1 on GradeScope: Wednesday (Mar. 3) 11:00 AM - Friday (Mar. 5) 11:00 AM
   * Check out the **[study guide](/study_guides/midterm_1_study_guide.md)**!
-  * Will be posted as link named "Midterm 1" at Friday 10:00 AM.
+  * Will be posted as link named "Midterm 1" at Wednesday 11:00 AM.
   * You will choose a 3 hour span to complete exam within the above 2-day period.
   * Your 3 hours begin the moment you click on link and agree to the terms on the next screen.
   * Open book but individual work.
