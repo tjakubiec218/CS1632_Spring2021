@@ -23,9 +23,9 @@ Please install the Cucumber plug-in for Eclipse following these steps (recommend
 3. Install the "Cucumber Eclipse Plugin" that pops up in the search box.
 4. You will be asked to restart Eclipse to complete installation.  Please do so.
 
-Otherwise, you should be able to use the command line Maven tool to install the
-Cucumber plug-in.  But for that, you will need to install Maven first using the
-following link (not recommended): https://maven.apache.org/download.cgi
+Otherwise, you can use the command line Maven tool to install Cucumber.
+But for that, you will need to install Maven first using the
+following link (not necessary unless you want to run Cucumber on the command line and not on Eclipse): https://maven.apache.org/download.cgi
 
 ## Running Cucumber Tests
 
