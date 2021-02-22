@@ -156,7 +156,7 @@ Tests run: 14, Failures: 0, Errors: 1, Skipped: 0
 ...
 ```
 
-### Further Modifying StepDefinitions.java and User Story for the "rent cats" Feature
+### Further Modifying StepDefinitions.java and User Story for the "return cats" Feature
 
 So where did this error come from?  If you scroll up in the Cucumber output a
 little bit, you will see the following messages:
