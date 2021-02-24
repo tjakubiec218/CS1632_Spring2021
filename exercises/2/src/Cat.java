@@ -29,8 +29,8 @@ public class Cat {
 	 * is not taken by another cat! This is probably something that we would fix in
 	 * a production system.
 	 * 
-	 * @param int    id - the id number of this cat
-	 * @param String name - the name of this Cat
+	 * @param id - the id number of this cat
+	 * @param name - the name of this Cat
 	 */
 
 	public Cat(int id, String name) {

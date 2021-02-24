@@ -124,7 +124,7 @@ public class RentACatBuggy implements RentACat {
 	 * Given an id, return a reference to the specified cat if a cat with that ID
 	 * exists. Return null if no cat of that ID exists in the list.
 	 * 
-	 * @param int id ID of cat to search for
+	 * @param id ID of cat to search for
 	 * @return Cat searched for if exists, null otherwise
 	 */
 
