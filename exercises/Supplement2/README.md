@@ -121,7 +121,16 @@ All the places to modify have been marked by // TODO comments.
 ### Updating RentACatImpl.java
 
 Let's first start by completing src/main/java/RentACatImpl.java.  You can just
-copy the version that you completed for Exercise 2.  Just by doing that, many
+copy the version that you completed for Exercise 2.
+
+**UPDATE**: You have to make a couple of adjustments to RentACatImpl.java before it will compile.
+1. Put the following line at the top:
+   ```
+   package edu.pitt.cs.cs1632;
+   ```
+1. Replace bugInjectionOn with _bugInjectionOn (apologies for not fixing this).
+
+Just by doing that, many
 tests will pass now.  Try running it after copying the file and you will get:
 
 ```
