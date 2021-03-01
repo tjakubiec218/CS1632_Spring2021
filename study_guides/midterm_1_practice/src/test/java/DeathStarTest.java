@@ -17,12 +17,5 @@ public class DeathStarTest {
 	@Test
 	public void testGetDamageShootTwice() {
 		// TODO: Fill in!
-		DeathStar star = new DeathStar();
-		Planet p = Mockito.mock(Planet.class);
-		Mockito.when(p.getHitPoints()).thenReturn(10);
-		Mockito.when(p.toString()).thenReturn("Wimpy planet");
-		String ret = star.shoot(p);
-		assertEquals("Wimpy planet was hit by the superlaser!", ret);
-		Mockito.verify(p).damage(100);
 	}
 }
