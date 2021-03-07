@@ -26,7 +26,7 @@ Coverage screenshot submitted:       ____ / 5
 Must show coverage % of CoffeeMakerQuestImpl.
 Must show methods in CoffeeMakerQuestImpl.
 
-Coverage exceeds 80%:                ____ / 10
+Coverage exceeds 90%:                ____ / 10
 
 This number pertains to the CoffeeMakerQuestImpl class only,
 not CoffeeMakerQuestImpl.java including the Item enum.
