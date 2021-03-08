@@ -17,7 +17,7 @@
       "id": "9711e1a1-a703-4179-8623-14e2a0ec138b",
       "comment": "",
       "command": "setWindowSize",
-      "target": "2559x1320",
+      "target": "1200x800",
       "targets": [],
       "value": ""
     }, {
@@ -42,7 +42,7 @@
       "id": "44c090a8-4a5e-4ed8-9a61-6ffa769c5273",
       "comment": "",
       "command": "setWindowSize",
-      "target": "2559x1320",
+      "target": "1200x800",
       "targets": [],
       "value": ""
     }, {
@@ -72,7 +72,7 @@
       "id": "df6243ae-929f-4ec6-953d-0e3ec70ea1ca",
       "comment": "",
       "command": "setWindowSize",
-      "target": "2559x1320",
+      "target": "1200x800",
       "targets": [],
       "value": ""
     }, {
@@ -98,6 +98,13 @@
       "comment": "",
       "command": "open",
       "target": "/r/cats/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9034713c-d619-4f75-ad75-91a4178d642c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x800",
       "targets": [],
       "value": ""
     }, {
@@ -143,13 +150,6 @@
       ],
       "value": "${KEY_ENTER}"
     }, {
-      "id": "9034713c-d619-4f75-ad75-91a4178d642c",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "2559x1320",
-      "targets": [],
-      "value": ""
-    }, {
       "id": "9ee8aa92-d04e-4319-8913-11d2fc2c95b3",
       "comment": "",
       "command": "assertText",
@@ -176,7 +176,7 @@
       "id": "4b9d0107-2f7e-4a9e-ba5e-3af003f2daa3",
       "comment": "",
       "command": "setWindowSize",
-      "target": "2559x1320",
+      "target": "1200x800",
       "targets": [],
       "value": ""
     }, {
@@ -199,6 +199,13 @@
       "comment": "",
       "command": "open",
       "target": "/r/cats/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "21a3d510-43c0-4eb3-b677-e097ddd08069",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x800",
       "targets": [],
       "value": ""
     }, {
