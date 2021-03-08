@@ -49,13 +49,14 @@
       "id": "22382cf9-ae71-4ffe-b2a4-b4e99951521e",
       "comment": "",
       "command": "assertText",
-      "target": "xpath=//div[2]/div/div/div/div/div[2]/button",
+      "target": "css=.\\_1Q_zPN5YtTLQVG72WhRuf3 > .\\_2CLbCoThTVSANDpeJGlI6a",
       "targets": [
-        ["css=.\\_3VgTjAJVNNV7jzlnwY-OFY", "css:finder"],
+        ["css=.\\_1Q_zPN5YtTLQVG72WhRuf3 > .\\_2CLbCoThTVSANDpeJGlI6a", "css:finder"],
         ["xpath=//div[@id='SHORTCUT_FOCUSABLE_DIV']/div[2]/div/div/div/div[2]/div/div/div/div/div[2]/button", "xpath:idRelative"],
-        ["xpath=//div[2]/div/div/div/div/div[2]/button", "xpath:position"]
+        ["xpath=//div[2]/div/div/div/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Join')]", "xpath:innerText"]
       ],
-      "value": "JOIN"
+      "value": "Join"
     }]
   }, {
     "id": "b4156cd9-813f-48bd-a2cc-69d2fa25ad5d",
@@ -78,7 +79,7 @@
       "id": "fb591b3c-f298-4955-8374-4b74162026bb",
       "comment": "",
       "command": "storeAttribute",
-      "target": "xpath=//a[contains(text(),'sign up')]@href",
+      "target": "linkText=Sign Up@href",
       "targets": [],
       "value": "signup_href"
     }, {
