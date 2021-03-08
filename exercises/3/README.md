@@ -154,7 +154,7 @@ You can now run the RedditCatsTest JUnit class using the provided
    run.sh
    ```
 
-Note that the script only works if you have Chrome version 85 installed on your
+Note that the script only works if you have Chrome version 89 installed on your
 computer (the most recent version as of today).  If you have a different
 version of Chrome, you may have to update the chromedriver.exe (or
 chromedriver) in your respective OS folder (Windows / Mac / Linux) by
@@ -217,8 +217,8 @@ not explore this option today.
    And remove all calls to setSize in your test cases.
 
 1. Lastly, there is a quirk with the Reddit website that I only found out recently.  The following two websites are very different websites:
-   * https://www.reddit.com/r/cats/
-   * https://www.reddit.com//r/cats/
+   * https://www.reddit.com/r/cats/  
+   * https://www.reddit.com//r/cats/  
    You'd be surprised!  Make sure you are accessing the former and not the latter.
 
 ## Submission
