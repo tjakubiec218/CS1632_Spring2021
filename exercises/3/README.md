@@ -86,8 +86,8 @@ also general enough to not change between page loads.  You do need to try this
 out several times to get a feel of what a good locator string is.  Here is an
 in-depth discussion about locators:  
 
-   https://www.selenium.dev/documentation/en/getting_started_with_webdriver/locating_elements/#element-selection-strategies
-
+   https://www.selenium.dev/documentation/en/webdriver/locating_elements/#element-selection-strategies
+   
 1. Sometimes you can use an XPATH position locator string to check that an
    element exists at an expected location ("assert element present") or does
 not exist ("assert element not present").  But to do this, you have to select
