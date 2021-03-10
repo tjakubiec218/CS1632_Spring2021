@@ -135,24 +135,29 @@ comments.  Leave other boxes unchecked.
 
 1. Save the resulting file into "RedditCatsTest.java".
 
+1. You will have to also add this line to the beginning of the @Before
+setUp() method in the generated RedditCatsTest.java file:
+
+   ```
+   System.setProperty("webdriver.chrome.driver", "Windows/chromedriver.exe");
+   ```
+   Or whatever the path is to your OS compatible chromedriver.  
+
 You can now run the RedditCatsTest JUnit class using the provided
 [TestRunner.java](TestRunner.java) using one of the following scripts:
 
 * If you are running Windows:
    ```
-   cd Windows
    run.bat
    ```
-* If you are running Mac:
+
+* If you are running Mac or Linux:
    ```
-   cd Mac
    run.sh
    ```
-* If you are running Linux:
-   ```
-   cd Linux
-   run.sh
-   ```
+
+* You can also run your Selenium tests on Eclipse using the "Run JUnit"
+  feature.
 
 Note that the script only works if you have Chrome version 89 installed on your
 computer (the most recent version as of today).  If you have a different
@@ -190,35 +195,90 @@ not explore this option today.
 
 1. Often problems that are not apparent in the Selenium IDE commands become apparent in the Java code.  Read the Java code to detect problems.
 
-1. If you want to run your Selenium tests on Eclipse using the "Run JUnit" feature, you will have to also add this line to the beginning of the @Before setUp() method:
-   ```
-   System.setProperty("webdriver.chrome.driver", "Windows/chromedriver.exe");
-   ```
-   Or whatever the path is to your OS compatible chromedriver.
-
-1. One common problem with Selenium is that it takes a long time for certain web pages or web elements to load and if Selenium proceeds with testing immediately after opening a page, the tests will fail.  So Selenium provides APIs to allow you to wait until an event happens (e.g. the element is loaded).  All the details about which APIs to use on which situations is in the page:
+1. One common problem with Selenium is that it takes a long time for certain
+   web pages or web elements to load and if Selenium proceeds with testing
+immediately after opening a page, the tests will fail.  So Selenium provides
+APIs to allow you to wait until an event happens (e.g. the element is
+loaded).  All the details about which APIs to use on which situations is in
+the page:
 
    https://www.selenium.dev/documentation/en/webdriver/waits/
    
    For your purposes, an implicit wait setting at the beginning should be enough.  Insert the following line in the @Before setUp() method:
+
    ```
    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
    ```
+
    In order to use that line, you will need to also import this library:
+
    ```
    import java.util.concurrent.TimeUnit;
    ```
-   What that does is: for every step, if the corresponding element is missing, it inserts an implicit wait of 10 seconds before signaling a failure.
 
-1. Another common problem is that depending on the browser window size, certain elements may disappear.  For example, the Reddit site would hide the "rules" bar on the right hand side if the windows is too narrow.  One way to solve this is to uniformly set the window size at the setUp() method so that all your tests will have the correct size:
+   What that does is: for every step, if the corresponding element is
+missing, it inserts an implicit wait of 10 seconds before signaling a
+failure.  Selenium IDE internally uses an implicit wait time of 30 seconds
+when running a script, but when it exports the script to the JUnit test, it
+fails to insert that implicit wait in the @Before setUp() method.  So if you
+want one, you need to insert it yourself.
+
+1. Another common problem is that depending on the browser window size,
+   certain elements may disappear.  For example, the Reddit site would hide
+the "rules" bar on the right hand side if the windows is too narrow.  One
+way to solve this is to uniformly set the window size at the @Before setUp()
+method so that all your test cases are tested on the same dimensions (and
+remove all calls to setSize in your test cases):
+
    ```
    driver.manage().window().setSize(new Dimension(1200, 800));
    ```
-   And remove all calls to setSize in your test cases.
+  
+1. Yet another common problem is that some websites have pesky pop up
+   windows that prevents the Selenium Web Driver from interacting with the
+website, resulting in test failure.  For example, the reddit.com has a pop
+up window asking whether you want to "Show notifications" for the website
+when visited for the first time.  Until you click "Block" or "Allow" on the
+pop up, the rest of the website is inaccessible.  Once you click on a
+choice, reddit.com will store your choice in a cookie and not ask you on
+subsequent visits.
+
+   When testing with Selenum IDE, the pop up will not occur because most
+likely this is not our first visit and as a browser extension, Selenium IDE
+has access to cookies.  However, when testing with the exported JUnit test,
+JUnit launches a standalone web browser instance in its own sandbox so it
+will not have access to pre-existing cookies.  That means the notification
+pop up will occur on the JUnit test every time.
+
+   If you do not want any interference from pop ups during testing, there is
+a simple way to do it.  Replace the following line in the @Before setUp()
+method, replace the following line:
+
+   ```
+   driver = new ChromeDriver();
+   ```
+
+   with the following set of lines:
+
+
+   ```
+   ChromeOptions options = new ChromeOptions();
+   options.addArguments("--disable-notifications");
+   driver = new ChromeDriver(options);
+   ```
+
+   The "Show notifications" pop up is not the only annoying pop up out
+there. Most of us are also familiar with the "Know your location" pop up.
+To disable this one, simply add this line to the above:
+
+   ```
+   options.addArguments("--disable-geolocation");
+   ```
 
 1. Lastly, there is a quirk with the Reddit website that I only found out recently.  The following two websites are very different websites:
    * https://www.reddit.com/r/cats/  
    * https://www.reddit.com//r/cats/  
+
    You'd be surprised!  Make sure you are accessing the former and not the latter.
 
 ## Submission
