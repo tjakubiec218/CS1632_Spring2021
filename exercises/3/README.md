@@ -268,6 +268,12 @@ method, replace the following line:
    driver = new ChromeDriver(options);
    ```
 
+   In order to use ChromeOptions, you will need to import the class at the top:
+
+   ```
+   import org.openqa.selenium.chrome.ChromeOptions;
+   ```
+
    The "Show notifications" pop up is not the only annoying pop up out
 there. Most of us are also familiar with the "Know your location" pop up.
 To disable this one, simply add this line to the above:
