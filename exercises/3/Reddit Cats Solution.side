@@ -49,9 +49,9 @@
       "id": "22382cf9-ae71-4ffe-b2a4-b4e99951521e",
       "comment": "",
       "command": "assertText",
-      "target": "css=.\\_1Q_zPN5YtTLQVG72WhRuf3 > .\\_2CLbCoThTVSANDpeJGlI6a",
+      "target": "css=.\\_1Q_zPN5YtTLQVG72WhRuf3 > .\\_1LHxa-yaHJwrPK8kuyv_Y4",
       "targets": [
-        ["css=.\\_1Q_zPN5YtTLQVG72WhRuf3 > .\\_2CLbCoThTVSANDpeJGlI6a", "css:finder"],
+        ["css=.\\_1Q_zPN5YtTLQVG72WhRuf3 > .\\_1LHxa-yaHJwrPK8kuyv_Y4", "css:finder"],
         ["xpath=//div[@id='SHORTCUT_FOCUSABLE_DIV']/div[2]/div/div/div/div[2]/div/div/div/div/div[2]/button", "xpath:idRelative"],
         ["xpath=//div[2]/div/div/div/div/div[2]/button", "xpath:position"],
         ["xpath=//button[contains(.,'Join')]", "xpath:innerText"]
@@ -186,8 +186,8 @@
       "target": "css=.\\_8ZLJI1-ZiP7pHJ_yO1L4Z:nth-child(3) .tbIApBd2DM_drfZQJjIum",
       "targets": [
         ["css=.\\_8ZLJI1-ZiP7pHJ_yO1L4Z:nth-child(3) .tbIApBd2DM_drfZQJjIum", "css:finder"],
-        ["xpath=//div[@id='SHORTCUT_FOCUSABLE_DIV']/div[2]/div/div/div/div[2]/div[3]/div[2]/div/div[4]/div/div[2]/div[3]/div/div[2]/div", "xpath:idRelative"],
-        ["xpath=//div[4]/div/div[2]/div[3]/div/div[2]/div", "xpath:position"]
+        ["xpath=//div[@id='SHORTCUT_FOCUSABLE_DIV']/div[2]/div/div/div/div[2]/div[3]/div[2]/div/div[5]/div/div[2]/div[3]/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div[2]/div[3]/div/div[2]/div", "xpath:position"]
       ],
       "value": "No NSFW, animal abuse, or cruelty"
     }]
