@@ -133,7 +133,8 @@ Follow these instructions:
    "Include step descriptions as a separate comment" to generate more detailed
 comments.  Leave other boxes unchecked.
 
-1. Save the resulting file into "RedditCatsTest.java".
+1. Save the resulting file into "RedditCatsTest.java" to the root of the
+   exercise 3 directory.
 
 1. You will have to also add this line to the beginning of the @Before
 setUp() method in the generated RedditCatsTest.java file:
@@ -157,7 +158,7 @@ You can now run the RedditCatsTest JUnit class using the provided
    ```
 
 * You can also run your Selenium tests on Eclipse using the "Run JUnit"
-  feature.
+  feature, after opening the provided Eclipse project.
 
 Note that the script only works if you have Chrome version 89 installed on your
 computer (the most recent version as of today).  If you have a different
