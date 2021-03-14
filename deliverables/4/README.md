@@ -1,7 +1,7 @@
 # CS 1632 - Software Quality Assurance
 Spring Semester 2021
 
-DUE: April 5 (Monday), 2020 11:00 AM
+DUE: April 5 (Monday), 2021 11:00 AM
 
 ## Deliverable 4
 
