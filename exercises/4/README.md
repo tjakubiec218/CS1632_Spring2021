@@ -261,15 +261,11 @@ run the autograder to grade you and give feedback.  If you get deductions, fix
 your code based on the feedback and resubmit.  Repeat until you don't get
 deductions. Don't forget to add your partner to the submission.
 
-1. Create a screenshot of the VisualVM Hotspots panel after running MonkeySim with argument 27 and name it hotspots.png. This should be after you have done all your optimizations and refactoring.  Example:
+1. After running MonkeySim with argument 27, export the VisualVM Hotspots panel to a PNG image file named hotspots.png. This should be after you have done all your optimizations and refactoring.  Example:
 
    ![alt text](hotspots.png "Hotspots panel after optimizations")
 
-   Make sure the "Hot spots" window lists the methods sorted in descending order of running time (Self Time).
-
-   After you have created the screenshot, save the picture to a PDF file and
-submit to GradeScope at the "Exercise 4 Profile" link.  Make sure the picture
-fits in one page for easy viewing and grading.
+   Make sure the "Hot spots" window lists the methods sorted in descending order of running time (Self Time) when you export.  You can export by clicking on the down arrow beside the "Export data to file or image" icon (that looks like a floppy disk) to pull down the menu and then clicking on "Export Hotspots".  You are given an option between CSV, HTML, XML, and PNG.  Choose the PNG option and save to hotspots.png.  Next, convert hotspots.png to a PDF file and submit to GradeScope at the "Exercise 4 Profile" link.  Make sure the picture fits in one page for easy viewing and grading.
 
 ## GradeScope Feedback
 
