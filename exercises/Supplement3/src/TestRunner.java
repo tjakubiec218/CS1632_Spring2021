@@ -4,15 +4,14 @@ import org.junit.runner.*;
 import org.junit.runner.notification.*;
 
 public class TestRunner {
-	@SuppressWarnings("rawtypes")
 	public static void main(String[] args) {
 
 		ArrayList<Class> classesToTest = new ArrayList<Class>();
 		boolean anyFailures = false;
 
 		// ADD ANY CLASSES YOU WISH TO TEST HERE
-		classesToTest.add(MonkeySimPinningTest.class);
-		classesToTest.add(MonkeySimStochasticTest.class);
+		classesToTest.add(IntegerOpsTest.class);
+		classesToTest.add(StringOpsTest.class);
 
 		// For all test classes added, loop through and use JUnit
 		// to run them.
