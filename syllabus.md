@@ -136,12 +136,14 @@ AFIST = [_A Friendly Introduction to Software Testing_](software-quality-assuran
 
 ## WEEK 13 (Week of 12 APR)
 
-* Week of Guest Lectures
+* Class 1: TBD
+
+* Class 2: Guest Lecture from Visimo on CI/CD Pipelines (11:05 ~ 12:20, 1:15 ~ 2:30)
 
 ## WEEK 14 (Week of 19 APR)
 
-* Class 1: Midterm 2 review
+* Class 1: Guest Lecture from CGI on Performance Testing (1:15 ~ 2:30)
 
-* Class 2: TBD
+* Class 2: Midterm 2 review
 
 * Midterm 2 on GradeScope (TBD)
