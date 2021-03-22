@@ -172,7 +172,7 @@ testAdd x='954712259', y='1056406418'
 ```
 
 You can see how QuickCheck is methodically doing the trial-and-error behind the
-scenes, so that you don't have to do it.
+scenes using bisection, so that you don't have to do it.
 
 ## Task 2: Debug IntegerOps
 
