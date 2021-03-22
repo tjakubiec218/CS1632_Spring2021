@@ -19,10 +19,19 @@ The fact that a property is invariant across the entire set of inputs allows a
 property-based test to be used with any input.  That means, instead of manually
 encoding inputs (say, as part of JUnit test scripts), we can even auto-generate
 some random inputs and test them against our property!  This type of testing
-is called stochastic testing, or random testing.  Stochastic testing is a
-synonym for property-based testing.  And by the way, this broad applicability
-of properties is what made them so useful for model checking and exhaustive
-program state space exploration in Exercise 5.
+is called stochastic testing, or random testing.  Stochastic testing relies
+on property-based tests to check postconditions for a broad range of inputs.  
+
+But stochastic testing is not the only place where property-based testing is
+used.  Property-based testing is also used in the form of invariant assertions
+embedded in source code that do sanity checks during operation.  These
+assertions are often left on when the software is deployed on the client site
+so that the program will shutdown rather than perform some irrecoverable
+disastrous action when a sanity check fails.  These sanity checks have to be
+invariants because they need to pass for all inputs and all system
+configurations that are legal.  Property-based testing is also useful for model
+checking that does exhaustive program state space exploration that we will
+practice on Exercise 5.
 
 For this exercise, we are going to use a JUnit extension library called
 QuickCheck.  Existing JUnit annotations such as @Test, @Before, @After still
