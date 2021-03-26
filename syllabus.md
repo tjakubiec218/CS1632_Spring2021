@@ -136,7 +136,7 @@ AFIST = [_A Friendly Introduction to Software Testing_](software-quality-assuran
 
 ## WEEK 13 (Week of 12 APR)
 
-* Class 1: TBD
+* Class 1: Guest Lecture from Penacity on Security Testing (11:05 ~ 12:20)
 
 * Class 2: Guest Lecture from Visimo on CI/CD Pipelines (11:05 ~ 12:20, 1:15 ~ 2:30)
 
