@@ -10,7 +10,7 @@
     + [Model Checking Using JUnit](#model-checking-using-junit)
     + [Add an Extra Invariant Test](#add-an-extra-invariant-test)
     + [Coding](#coding)
-    + [Static Testing](#static-testing)
+    + [Linting and Auditing](#linting-and-auditing)
     + [Manual System Testing](#manual-system-testing)
   * [Grading](#grading)
   * [Submission](#submission)
