@@ -412,6 +412,8 @@ the newly updated files:
 * src/MonkeySimStochasticTest.java
 * src/TestRunner.java
 * .classpath
+* runTest.bat
+* runTest.sh
 
 They are needed to enable QuickCheck in the original Exercise 4 project.
 
