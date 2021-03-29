@@ -1,5 +1,5 @@
 md bin
 
-javac -d bin -cp "CommandLineJunit\*" src\*.java
+javac -d bin -cp "CommandLineJunit\*;quickcheck-jars\*" src\*.java
 
-java -cp "CommandLineJunit\*;bin" TestRunner
+java -cp "CommandLineJunit\*;quickcheck-jars\*;bin" TestRunner
