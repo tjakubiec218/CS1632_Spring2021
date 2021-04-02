@@ -158,7 +158,7 @@ public class BeanCounterLogicTest {
 	 * Preconditions: None.
 	 * Execution steps: Call logic.reset(beans).
 	 *                  Call logic.advanceStep() in a loop until it returns false (the machine terminates).
-	 *                  Call logic.lowerHalf().
+	 *                  Call logic.upperHalf().
 	 * Invariants: After the machine terminates,
 	 *             remaining bean count is 0
 	 *             in-flight bean count is 0
