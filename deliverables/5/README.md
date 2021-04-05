@@ -331,6 +331,7 @@ solution implementation.  Here is how.
 
     testReset(BeanCounterLogicTest): Failure in (slotCount=5, beanCount=3, isLucky=true): expected:<2> but was:<0>
     testAdvanceStepPostCondition(BeanCounterLogicTest): Failure in (slotCount=5, beanCount=3, isLucky=true): expected:<3> but was:<0>
+    ...
     ```
 
 1. To test the BeanCounterLogicSolution implementation on Windows:
@@ -363,13 +364,13 @@ solution implementation.  Here is how.
     $ bash runJUnitBuggy.sh
     ```
 
-    Even though this is a buggy implementation, just plain JUnit testing will not find them easily:
+    The thing is, even after having completed the JUnit tests, just plain JUnit testing will not display any failures even though this is a buggy implementation:
 
     ```
     TESTING BUGGY IMPLEMENTATION WITH PLAIN JUNIT
     ```
 
-    To see the bugs, you can try invoking the main method inside
+    But there are bugs!  To see them with your own eyes, you only need to try invoking the main method inside
 BeanCounterLogicBuggy to see that something is not quite right:
 
     ```
@@ -517,8 +518,7 @@ implementation.  Here is how.
     $ bash runJPF.sh BeanCounter.macos.jpf
     ```
 
-    As output, you will see the same defects we saw for plain JUnit testing but
-for all the different machine configurations:
+    Sicne this is before doing any implementation, you will see the same failures we saw for plain JUnit testing, except this time for many different machine configurations:
 
     ```
     JavaPathfinder core system v8.0 (rev 471fa3b7c6a9df330160844e6c2e4ebb4bf06b6c) - (C) 2005-2014 United States Government. All rights reserved.
@@ -573,7 +573,7 @@ for all the different machine configurations:
     $ bash runJPFSolution.sh BeanCounter.macos.jpf
     ```
 
-    Again, BeanCounterLogicSolution is defect-free, so you should see no failures:
+    BeanCounterLogicSolution is a complete correct implementation, so you should see no failures:
 
     ```
     JavaPathfinder core system v8.0 (rev 471fa3b7c6a9df330160844e6c2e4ebb4bf06b6c) - (C) 2005-2014 United States Government. All rights reserved.
@@ -613,7 +613,7 @@ for all the different machine configurations:
     $ bash runJPFBuggy.sh BeanCounter.macos.jpf
     ```
 
-    Now JPF uncovers some hidden defects that we missed before:
+    Now JPF uncovers some hidden defects that we missed before in plain JUnit testing:
 
     ```
     JavaPathfinder core system v8.0 (rev 471fa3b7c6a9df330160844e6c2e4ebb4bf06b6c) - (C) 2005-2014 United States Government. All rights reserved.
