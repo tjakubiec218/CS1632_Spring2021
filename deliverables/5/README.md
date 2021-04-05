@@ -82,8 +82,8 @@ cannot be explained, because there was no reason for the change to begin with.
 The change in data can just be due to a statistical anomaly called "regression
 to the mean".  For example, an answer to question 3 can simply be that the
 student was exceptionally lucky during the midterms (she guessed all multiple
-choices and she got them all correct).  In the finals, her luck wore just off
-and she just got what she deserved.  This is called regression to the mean.
+choices and she got them all correct).  In the finals, her luck just wore off
+and she got what she deserved.  This is called regression to the mean.
 When a data point is on the extremes of the bell curve, it is often not because
 there is anything special about that data point, it is because the laws of
 probability worked in favor of it (or against it, depending on context) for
