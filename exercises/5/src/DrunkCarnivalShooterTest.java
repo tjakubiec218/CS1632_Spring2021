@@ -1,6 +1,8 @@
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import static org.junit.Assert.*;
+import gov.nasa.jpf.vm.Verify;
 
 /**
  * Code by @author Wonsun Ahn
@@ -31,6 +33,12 @@ public class DrunkCarnivalShooterTest {
 		 * Verify API, look at:
 		 * https://github.com/javapathfinder/jpf-core/wiki/Verify-API-of-JPF
 		 */
+
+		int targetChoice = Verify.getInt(0, 3);
+		for(int i = 0; i < targets.length; i++)
+		{
+			targets[i] = Verify.getBoolean();
+		}
 
 		// Create the game
 		shooter = DrunkCarnivalShooter.createInstance();
@@ -65,7 +73,15 @@ public class DrunkCarnivalShooterTest {
 	 */
 	@Test
 	public void testShoot() {
-		// TODO: Implement
+		StringBuilder builder = new StringBuilder();
+		int counter = 0;
+		shooter.shoot(targetChoice, builder);
+		for(int i = 3; i >= 0; i--) {
+			if(shooter.isTargetStanding(i)) {
+				counter++;
+			}
+		}
+		assertEquals(failString, counter, shooter.getRemainingTargetNum());
 
 		/*
 		 * Currently, it just prints out the failString to demonstrate to you all the
@@ -88,6 +104,6 @@ public class DrunkCarnivalShooterTest {
 		 * 
 		 * PLEASE COMMENT OUT when you are done implementing.
 		 */
-		System.out.println(failString);
+		//System.out.println(failString);
 	}
 }
